@@ -1,20 +1,15 @@
-import { Provider } from 'react-redux';
-import store from './store'; // Your Redux store
-import DisplayTodos from './components/DisplayTodos';
-import TodoItem from './components/TodosItem';
-import Todos from './components/Todos';
+
+import './App.css';
+import AddTodo from './components/AddTodo';
+import ListTodo from './components/ListTodo';
 
 function App() {
   return (
-    
-    <Provider store={store}>
-      <>
-    <DisplayTodos/>
-    <TodoItem/>
-    <Todos/>
-    </>
-    </Provider>
-   
+    <div className="App">
+      <AddTodo />
+      <ListTodo />
+    </div>
   );
 }
- export default App;
+
+export default App;
