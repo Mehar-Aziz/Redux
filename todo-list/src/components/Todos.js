@@ -1,4 +1,6 @@
 import React, { useState } from "React";
+import store from "../app/store";
+import { Connect } from "react-redux";
 
 const Todo = (props)=>{
 const[todo,setTodo] = useState("");
@@ -21,4 +23,4 @@ value={todo}
 
 };
 
-export default Todos;
+export default connect(null,null)(Todos);
